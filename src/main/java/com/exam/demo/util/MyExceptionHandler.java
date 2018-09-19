@@ -24,4 +24,19 @@ public class MyExceptionHandler {
         result.put("code", b.getCode());
         return result;
     }
+
+    /**
+     * 处理非自定义异常  这里是运行时的异常
+     *
+     * @param
+     * @return
+     */
+    @ExceptionHandler(RuntimeException.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public Map<String, Object> handlerRuntimeException() {
+        Map<String, Object> result = new HashMap<>();
+        result.put("message", "服务器出现异常了啊,请稍后再尝试哦");
+        result.put("code", "500");//这边的话需要自己手动去写 因为没有对应的构造方法
+        return result;
+    }
 }
