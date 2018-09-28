@@ -22,6 +22,7 @@ public class MyExceptionHandler {
         Map<String, Object> result = new HashMap<>();
         result.put("message", b.getMessage());
         result.put("code", b.getCode());
+        b.printStackTrace();
         return result;
     }
 
@@ -35,7 +36,7 @@ public class MyExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public Map<String, Object> handlerRuntimeException() {
         Map<String, Object> result = new HashMap<>();
-        result.put("message", "服务器出现异常了啊,请稍后再尝试哦");
+        result.put("message", "服务器出现异常了啊,请稍后再尝试哦1");
         result.put("code", "500");//这边的话需要自己手动去写 因为没有对应的构造方法
         return result;
     }
