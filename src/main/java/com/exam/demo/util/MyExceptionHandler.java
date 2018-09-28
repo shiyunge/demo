@@ -26,6 +26,10 @@ public class MyExceptionHandler {
         return result;
     }
 
+    //会根据你选择的异常类型对象去判断   如何是运行中的异常 不是自定义的异常
+    //的话那么系统会自动的去选择第二个 如果是你定义的BusinessException对象的话
+    //那么系统会自动的去判断第一个；。。。。。。
+
     /**
      * 处理非自定义异常  这里是运行时的异常
      *
