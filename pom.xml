@@ -73,6 +73,23 @@
             <version>2.6.1</version>
         </dependency>
 
+        <!--自己私服的考试的资源-->
+        <dependency>
+            <groupId>com.fbzh.exam</groupId>
+            <artifactId>exam-client</artifactId>
+            <version>1.0.0</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <!--公司maven私服上面的资源-->
+        <!--<dependency>-->
+        <!--<groupId>com.fbzh.sys</groupId>-->
+        <!--<artifactId>sys-web</artifactId>-->
+        <!--<version>3.1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
+        <!--展开之后我们发现并不能导入 说明现在只能再我能自己的私服
+        上面去更新或者下载新的jar包，对于公司里面的私服上面的东西
+        我们暂时还不能去更新或者去下载-->
     </dependencies>
 
     <build>
