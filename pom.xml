@@ -87,6 +87,13 @@
             <version>4.0.1</version>
         </dependency>
 
+        <!--阿帕奇提供的字符串的判断方法-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.3.2</version>
+        </dependency>
+
         <!--公司maven私服上面的资源-->
         <!--<dependency>-->
         <!--<groupId>com.fbzh.sys</groupId>-->
