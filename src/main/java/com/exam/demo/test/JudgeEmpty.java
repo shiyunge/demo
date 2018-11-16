@@ -27,5 +27,6 @@ public class JudgeEmpty {
         Map<String,Object> params = new HashMap<>();
         System.out.print("======================================");
         System.out.print(JudgeEmptyUtil.MapEmpty(params));
+
     }
 }
