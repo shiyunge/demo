@@ -80,6 +80,12 @@
             <version>1.0.0</version>
             <classifier>sources</classifier>
         </dependency>
+        <!--添加mapper层公共的方法-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>4.0.1</version>
+        </dependency>
 
         <!--公司maven私服上面的资源-->
         <!--<dependency>-->
